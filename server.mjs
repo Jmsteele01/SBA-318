@@ -4,7 +4,6 @@ const router = express.Router();
 import users from "./data/users.mjs";
 import posts from "./data/posts.mjs";
 
-
 //Setups
 const app = express();
 const port = 3000;
@@ -22,6 +21,11 @@ app.get("/users", (req, res) => {
 app.get("/posts", (req, res) => {
   res.json(posts);
 });
+
+// app.post("/posts", (req, res) =>{
+//   console.log("Make a new post!")
+// });
+
 
 //Listener
 app.listen(port, () => {
