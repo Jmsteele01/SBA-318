@@ -12,8 +12,8 @@ const port = 3000;
 // const posts = require("./data/posts");
 
 app.get("/", (req, res) => {
-  res.send("Work in progress!");
-});
+  res.send("User Routes");
+});   
 
 app.listen(port, () => {
   console.log(`server running on port: ${port}`);
